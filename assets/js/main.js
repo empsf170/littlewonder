@@ -65,9 +65,9 @@ function animateCounter(el) {
     const progress = Math.min((now - start) / duration, 1);
     const eased = 1 - Math.pow(1 - progress, 3);
     const val = eased * target;
-    el.textContent = prefix + (isDecimal ? val.toFixed(1) : Math.floor(val)) + suffix;
+    el.textContent = prefix + (isDecimal ? val.toFixed(1) : Math.floor(val).toLocaleString()) + suffix;
     if (progress < 1) requestAnimationFrame(step);
-    else el.textContent = prefix + target + suffix;
+    else el.textContent = prefix + (isDecimal ? target : target.toLocaleString()) + suffix;
   }
   requestAnimationFrame(step);
 }
