@@ -1,0 +1,205 @@
+/* 
+==================================================
+BIRTHDAY PARTY - RESPONSIVE STYLES
+================================================== 
+*/
+
+/* Tablet (768px - 991px) */
+@media (max-width: 991px) {
+  .hero-section {
+    padding: 80px 0 100px;
+  }
+  
+  .hero-img-wrapper img {
+    height: 400px;
+    margin-top: 40px;
+    border-radius: var(--border-radius-lg);
+  }
+  
+  .search-card {
+    transform: translateY(-30px);
+    margin-bottom: 20px;
+  }
+  
+  .heading-lg {
+    font-size: clamp(2rem, 6vw, 3rem);
+  }
+  
+  .navbar-collapse {
+    background-color: var(--white);
+    padding: 20px;
+    border-radius: var(--border-radius-sm);
+    box-shadow: var(--box-shadow);
+    margin-top: 15px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    z-index: 1050;
+  }
+}
+
+/* Mobile (320px - 767px) */
+@media (max-width: 767px) {
+  .top-bar {
+    display: none; /* Hide top bar on very small screens for cleanliness */
+  }
+  
+  .hero-section {
+    padding: 40px 0 60px;
+    text-align: center;
+  }
+  
+  .hero-section .btn-primary-custom, 
+  .hero-section .btn-secondary-custom {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  .hero-img-wrapper img {
+    height: 300px;
+  }
+  
+  .search-card {
+    padding: 20px;
+    transform: translateY(-20px);
+  }
+  
+  .service-card {
+    margin-bottom: 20px;
+  }
+  
+  .footer-widget {
+    margin-bottom: 30px;
+  }
+}
+
+
+/* ==================================================
+   CORRECTION RESPONSIVE FIXES
+   ================================================== */
+@media (max-width: 991.98px) {
+  .site-header .navbar {
+    padding: 10px 0;
+  }
+
+  .site-header .navbar-toggler {
+    padding: 6px 8px;
+    margin-left: auto;
+  }
+
+  .site-header .navbar-collapse {
+    left: 0;
+    right: 0;
+    width: 100%;
+    margin-top: 10px;
+    padding: 16px 18px 20px;
+    border-radius: 14px;
+    background: var(--white);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.10);
+  }
+
+  .site-header .navbar-nav {
+    width: 100%;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    align-items: stretch;
+  }
+
+  .site-header .navbar-nav .nav-link {
+    display: block;
+    width: 100%;
+    padding: 10px 12px !important;
+    text-align: left;
+    border-radius: 8px;
+  }
+
+  .site-header .navbar-nav .nav-link:hover,
+  .site-header .navbar-nav .nav-link.active {
+    background: var(--light-pink);
+  }
+
+  .site-header .navbar-collapse > .btn-primary-custom {
+    width: 100%;
+    margin-top: 8px;
+    min-height: 48px;
+  }
+
+  .about-visual {
+    max-width: 100%;
+  }
+
+  .about-badge {
+    width: 125px;
+    height: 125px;
+    transform: translate(8%, 8%);
+  }
+
+  .about-badge .fs-2 {
+    font-size: 1.65rem !important;
+  }
+
+  .process-grid > [class*="col-"] {
+    width: 50%;
+    flex: 0 0 50%;
+  }
+
+  .process-grid h4 {
+    min-height: 54px;
+    font-size: 1.1rem;
+  }
+
+  .hero-section .d-flex.flex-wrap.gap-3 {
+    gap: 12px !important;
+  }
+
+  .hero-section .d-flex.flex-wrap.gap-3 .btn-primary-custom,
+  .hero-section .d-flex.flex-wrap.gap-3 .btn-secondary-custom {
+    flex: 1 1 190px;
+  }
+
+  .blog-card .card-title {
+    min-height: 72px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .hero-section .d-flex.flex-wrap.gap-3 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hero-section .d-flex.flex-wrap.gap-3 .btn-primary-custom,
+  .hero-section .d-flex.flex-wrap.gap-3 .btn-secondary-custom {
+    width: 100%;
+    min-width: 0;
+    min-height: 50px;
+  }
+
+  .about-badge {
+    width: 105px;
+    height: 105px;
+    transform: translate(4%, 4%);
+  }
+
+  .about-badge .fs-2 {
+    font-size: 1.35rem !important;
+  }
+
+  .about-badge .small {
+    font-size: 0.65rem;
+  }
+
+  .process-grid > [class*="col-"] {
+    width: 100%;
+    flex: 0 0 100%;
+  }
+
+  .process-grid h4 {
+    min-height: 0;
+  }
+
+  .blog-card .card-title {
+    min-height: 0;
+  }
+}
